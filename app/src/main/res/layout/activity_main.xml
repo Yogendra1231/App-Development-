@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation= "vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome, Sign Up"
+        android:layout_gravity="center"
+        android:textSize="50dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "80dp"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_info_24"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="194dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/blue"
+            android:id="@+id/etMail"
+            android:hint="Enter Your Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        app:startIconDrawable="@drawable/baseline_email_24"
+        android:backgroundTint="@color/black">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:startIconDrawable="@drawable/baseline_wifi_password_24"
+        app:endIconMode="password_toggle"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPass"
+            android:hint="Enter Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_margin="30dp"
+        android:backgroundTint="@color/blue"
+        android:layout_gravity="center"
+        android:text="Sign Up">
+
+    </Button>
+
+</LinearLayout>
